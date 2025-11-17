@@ -23,7 +23,7 @@ import ConsumerInsights from './pages/ConsumerInsights';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.DEV ? "/backstagebrains" : "/"}>
       <AuthProvider>
         <DataProvider>
           <div className="min-h-screen bg-gray-50">
